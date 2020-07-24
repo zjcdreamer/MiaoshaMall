@@ -1,4 +1,4 @@
-package com.imooc.miaosha.controller;
+package com.imooc.miaosha.result;
 
 public class CodeMsg {
     private int code;
