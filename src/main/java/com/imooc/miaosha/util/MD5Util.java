@@ -11,12 +11,12 @@ public class MD5Util {
     private static final String salt = "1a2b3c4d";
 
     public static String inputPassToFormPass(String pass){
-        String str = salt.charAt(0)+salt.charAt(4)+salt.charAt(5)+ pass + salt.charAt(1);
+        String str = ""+salt.charAt(0)+salt.charAt(2) + pass +salt.charAt(5) + salt.charAt(4);
         return md5(str);
     }
 
     public static String formPassToDBPass(String pass, String salt){
-        String str = salt.charAt(0)+salt.charAt(4)+salt.charAt(5)+ pass + salt.charAt(1);
+        String str = ""+salt.charAt(0)+salt.charAt(2) + pass +salt.charAt(5) + salt.charAt(4);
         return md5(str);
     }
 
