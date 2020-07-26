@@ -46,26 +46,8 @@ public class LoginController {
     public Result<Boolean> doLogin(@Valid LoginVo loginVo) {
         String mobile = loginVo.getMobile();
         String password = loginVo.getPassword();
-
-//        //检查手机号是否为空
-//        if(StringUtils.isEmpty(mobile)){
-//            return Result.error(CodeMsg.MOBILE_EMPTY);
-//        }
-//        //检验密码是否为空
-//        if(StringUtils.isEmpty(password)){
-//            return Result.error(CodeMsg.PASSWORD_EMPTY);
-//        }
-//        //检验手机格式是否正确
-//        if(!ValidatorUtil.isMobile(mobile)){
-//            return Result.error(CodeMsg.MOBILE_ERROR);
-//        }
-
         //登录
-        CodeMsg cm = miaoShaUserService.login(loginVo);
-        if(cm.getCode() == 0){
-            return Result.success(true);
-        }else {
-            return Result.error(cm);
-        }
+        miaoShaUserService.login(loginVo);
+        return Result.success(true);
     }
 }
