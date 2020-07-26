@@ -5,14 +5,13 @@ import org.thymeleaf.util.StringUtils;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
-import java.lang.annotation.Annotation;
 
-public class isMobileValidator implements ConstraintValidator<isMobile, String> {
+public class IsMobileValidator implements ConstraintValidator<IsMobile, String> {
 
     boolean required = false;
 
     @Override
-    public void initialize(isMobile constraintAnnotation) {
+    public void initialize(IsMobile constraintAnnotation) {
         required = constraintAnnotation.required();
     }
 

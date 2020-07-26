@@ -43,11 +43,11 @@ public class LoginController {
 
     @RequestMapping("/do_login")
     @ResponseBody
-    public Result<Boolean> doLogin(@Valid LoginVo loginVo) {
+    public Result<Boolean> doLogin(HttpServletResponse response, @Valid LoginVo loginVo) {
         String mobile = loginVo.getMobile();
         String password = loginVo.getPassword();
         //登录
-        miaoShaUserService.login(loginVo);
+        miaoShaUserService.login(response, loginVo);
         return Result.success(true);
     }
 }
