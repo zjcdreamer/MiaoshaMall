@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.thymeleaf.util.StringUtils;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/login")
@@ -42,21 +43,23 @@ public class LoginController {
 
     @RequestMapping("/do_login")
     @ResponseBody
-    public Result<Boolean> doLogin(LoginVo loginVo) {
+    public Result<Boolean> doLogin(@Valid LoginVo loginVo) {
         String mobile = loginVo.getMobile();
         String password = loginVo.getPassword();
-        //检查手机号是否为空
-        if(StringUtils.isEmpty(mobile)){
-            return Result.error(CodeMsg.MOBILE_EMPTY);
-        }
-        //检验密码是否为空
-        if(StringUtils.isEmpty(password)){
-            return Result.error(CodeMsg.PASSWORD_EMPTY);
-        }
-        //检验手机格式是否正确
-        if(!ValidatorUtil.isMobile(mobile)){
-            return Result.error(CodeMsg.MOBILE_ERROR);
-        }
+
+//        //检查手机号是否为空
+//        if(StringUtils.isEmpty(mobile)){
+//            return Result.error(CodeMsg.MOBILE_EMPTY);
+//        }
+//        //检验密码是否为空
+//        if(StringUtils.isEmpty(password)){
+//            return Result.error(CodeMsg.PASSWORD_EMPTY);
+//        }
+//        //检验手机格式是否正确
+//        if(!ValidatorUtil.isMobile(mobile)){
+//            return Result.error(CodeMsg.MOBILE_ERROR);
+//        }
+
         //登录
         CodeMsg cm = miaoShaUserService.login(loginVo);
         if(cm.getCode() == 0){

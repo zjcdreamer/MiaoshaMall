@@ -2,7 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b780bd19-5a05-4021-9755-bd42b54784d6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobileValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/miaosha.iml" beforeDir="false" afterPath="$PROJECT_DIR$/miaosha.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/LoginVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/LoginVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/MiaoshaApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/controller/LoginController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/controller/Samplecontroller.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/dao/IuserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/dao/MiaoShaUserDAO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/domain/MiaoShaUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/domain/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/redis/BasePrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/redis/KeyPrefix.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/redis/RedisConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/redis/RedisPoolFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/redis/RedisService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/redis/UserKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/result/CodeMsg.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/result/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/service/MiaoShaUserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/service/UserService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/util/MD5Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/util/ValidatorUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/vo/LoginVo.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,184 +42,63 @@
     <session id="-1332813492">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="10" />
+          <entry key="project.closed" value="11" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.36" value="1" />
           <entry key="project.open.time.39" value="2" />
-          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.4" value="2" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.62" value="1" />
-          <entry key="project.opened" value="11" />
+          <entry key="project.opened" value="12" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="18" />
+          <entry key="Annotation" value="1" />
+          <entry key="class" value="23" />
           <entry key="html" value="8" />
-          <entry key="java" value="75" />
+          <entry key="java" value="92" />
           <entry key="js" value="8" />
           <entry key="properties" value="10" />
-          <entry key="xml" value="6" />
+          <entry key="xml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="18" />
+          <entry key="CLASS" value="23" />
           <entry key="HTML" value="8" />
-          <entry key="JAVA" value="75" />
+          <entry key="JAVA" value="92" />
           <entry key="JavaScript" value="8" />
           <entry key="Properties" value="10" />
-          <entry key="XML" value="6" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="8" />
           <entry key="html" value="38" />
-          <entry key="java" value="4400" />
+          <entry key="java" value="4590" />
           <entry key="properties" value="313" />
-          <entry key="xml" value="12" />
+          <entry key="xml" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="38" />
-          <entry key="JAVA" value="4400" />
+          <entry key="JAVA" value="4590" />
           <entry key="PLAIN_TEXT" value="8" />
           <entry key="Properties" value="313" />
-          <entry key="XML" value="12" />
+          <entry key="XML" value="13" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="74" column="4" lean-forward="true" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/MD5Util.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/LoginVo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaUserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/ValidatorUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="361">
-              <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/MiaoShaUserDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaUser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-              <folding>
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#394#395#0" expanded="true" />
-                <element signature="e#422#423#0" expanded="true" />
-                <element signature="e#457#458#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#536#537#0" expanded="true" />
-                <element signature="e#576#577#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#642#643#0" expanded="true" />
-                <element signature="e#690#691#0" expanded="true" />
-                <element signature="e#730#731#0" expanded="true" />
-                <element signature="e#761#762#0" expanded="true" />
-                <element signature="e#788#789#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#860#861#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-                <element signature="e#990#991#0" expanded="true" />
-                <element signature="e#1027#1028#0" expanded="true" />
-                <element signature="e#1062#1063#0" expanded="true" />
-                <element signature="e#1116#1117#0" expanded="true" />
-                <element signature="e#1164#1165#0" expanded="true" />
-                <element signature="e#1202#1203#0" expanded="true" />
-                <element signature="e#1238#1239#0" expanded="true" />
-                <element signature="e#1294#1295#0" expanded="true" />
-                <element signature="e#1344#1345#0" expanded="true" />
-                <element signature="e#1382#1383#0" expanded="true" />
-                <element signature="e#1415#1416#0" expanded="true" />
-                <element signature="e#1468#1469#0" expanded="true" />
-                <element signature="e#1512#1513#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
-              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MiaoshaApplication.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -202,6 +107,30 @@
               <folding>
                 <element signature="e#336#337#0" expanded="true" />
                 <element signature="e#405#406#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobile.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobileValidator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="243">
+              <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -248,16 +177,18 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/redis/UserKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/Samplecontroller.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/redis/RedisService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/Logincontroller.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/LoginVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/ValidatorUtil.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaUser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/MiaoShaUserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/MD5Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaUserService.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/LoginVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobileValidator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/LoginController.java" />
       </list>
     </option>
   </component>
@@ -281,7 +212,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-12" />
     <option name="y" value="-12" />
     <option name="width" value="1944" />
@@ -293,7 +224,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -421,45 +352,24 @@
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="imooc" type="462c0819:PsiDirectoryNode" />
               <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="validator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="imooc" type="462c0819:PsiDirectoryNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
               <item name="vo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -470,7 +380,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595668160529" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595731161858" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -566,18 +476,19 @@
       <workItem from="1595571733940" duration="7079000" />
       <workItem from="1595602961512" duration="165000" />
       <workItem from="1595644697574" duration="3794000" />
-      <workItem from="1595658684475" duration="7874000" />
+      <workItem from="1595658684475" duration="9754000" />
+      <workItem from="1595729027579" duration="2157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47233000" />
+    <option name="totallyTimeSpent" value="51270000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="704" extended-state="7" />
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20937753" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21261115" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -587,7 +498,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924694" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.44833624" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25569177" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.262697" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -611,6 +522,7 @@
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -620,48 +532,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/javaTool/java/jdk1.8/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="26" selection-start-line="26" selection-end-line="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/javaTool/java/jdk1.8/jre/lib/rt.jar!/sun/reflect/DelegatingMethodAccessorImpl.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar!/org/springframework/util/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar!/org/springframework/web/method/support/ModelAndViewContainer.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="122" selection-start-line="122" selection-end-line="122" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar!/org/springframework/util/Assert.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar!/org/springframework/web/method/HandlerMethod.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="198" selection-start-line="198" selection-end-line="198" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar!/org/springframework/web/servlet/mvc/method/AbstractHandlerMethodAdapter.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="93">
@@ -825,14 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="698">
-          <caret line="73" column="21" selection-start-line="73" selection-start-column="21" selection-end-line="73" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -853,10 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
           <caret line="602" column="19" selection-start-line="602" selection-start-column="19" selection-end-line="602" selection-end-column="19" />
-          <folding>
-            <element signature="e#21591#21592#0" expanded="true" />
-            <element signature="e#21636#21637#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -876,8 +734,131 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/MD5Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
+        <state relative-caret-position="268">
           <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/MiaoShaUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="21" column="32" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="74" column="4" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/JavaSE基础/练习代码/Javacorelearn/java/lang/annotation/Repeatable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="40" column="36" lean-forward="true" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/hibernate/validator/hibernate-validator/6.1.5.Final/hibernate-validator-6.1.5.Final.jar!/org/hibernate/validator/constraints/Length.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2-sources.jar!/javax/validation/Constraint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="89" column="63" lean-forward="true" selection-start-line="89" selection-start-column="63" selection-end-line="89" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/JavaSE基础/练习代码/Javacorelearn/java/lang/annotation/Annotation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-578">
+          <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.lang.annotation.Annotation">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.lang.annotation.Annotation</OriginalElement>
+          <nodes>
+            <node x="" y="">java.lang.annotation.Annotation</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="56.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2-sources.jar!/javax/validation/constraints/NotNull.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="38" column="6" lean-forward="true" selection-start-line="38" selection-start-column="6" selection-end-line="38" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/ValidatorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2-sources.jar!/javax/validation/ConstraintValidator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/LoginVo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="61" selection-start-line="61" selection-end-line="61" />
         </state>
       </provider>
     </entry>
@@ -892,94 +873,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/LoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobileValidator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/MiaoShaUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="243">
+          <caret line="24" column="28" lean-forward="true" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaUser.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding>
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#422#423#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-            <element signature="e#576#577#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#642#643#0" expanded="true" />
-            <element signature="e#690#691#0" expanded="true" />
-            <element signature="e#730#731#0" expanded="true" />
-            <element signature="e#761#762#0" expanded="true" />
-            <element signature="e#788#789#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#860#861#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-            <element signature="e#990#991#0" expanded="true" />
-            <element signature="e#1027#1028#0" expanded="true" />
-            <element signature="e#1062#1063#0" expanded="true" />
-            <element signature="e#1116#1117#0" expanded="true" />
-            <element signature="e#1164#1165#0" expanded="true" />
-            <element signature="e#1202#1203#0" expanded="true" />
-            <element signature="e#1238#1239#0" expanded="true" />
-            <element signature="e#1294#1295#0" expanded="true" />
-            <element signature="e#1344#1345#0" expanded="true" />
-            <element signature="e#1382#1383#0" expanded="true" />
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1468#1469#0" expanded="true" />
-            <element signature="e#1512#1513#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="21" column="32" lean-forward="true" selection-start-line="21" selection-start-column="32" selection-end-line="21" selection-end-column="32" />
+        <state relative-caret-position="483">
+          <caret line="21" column="36" lean-forward="true" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/ValidatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/LoginVo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="74" column="4" lean-forward="true" selection-start-line="74" selection-start-column="4" selection-end-line="74" selection-end-column="4" />
         </state>
       </provider>
     </entry>
