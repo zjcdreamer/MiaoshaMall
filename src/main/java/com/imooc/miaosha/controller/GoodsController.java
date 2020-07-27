@@ -35,15 +35,8 @@ public class GoodsController {
     RedisService redisService;
 
     @RequestMapping("/to_list")
-    public String toList(Model model,
-            @CookieValue(value = MiaoShaUserService.COOKIE_NAME_TOKEN, required = false) String cookieToToken,
-            @RequestParam(value = MiaoShaUserService.COOKIE_NAME_TOKEN, required = false) String param){
-        if (StringUtils.isEmpty(cookieToToken) && StringUtils.isEmpty(param)){
-            return "login";
-        }
-        String token = StringUtils.isEmpty(param)?cookieToToken:param;
-        MiaoShaUser userByToken = miaoShaUserService.getByToken(token);
-        model.addAttribute("user", userByToken);
+    public String toList(Model model, MiaoShaUser user){
+        model.addAttribute("user", user);
         return "goods_list";
     }
 }

@@ -44,20 +44,27 @@ public class MiaoShaUserService {
         String calPass = MD5Util.formPassToDBPass(formPass, salt);
         if(!dbpassword.equals(calPass))
             throw new GlobalException(CodeMsg.PASSWORD_ERROR);
+        addCookie(response, miaoShaUser);
+        return true;
+    }
 
+    public MiaoShaUser getByToken(HttpServletResponse response, String token) {
+        if (StringUtils.isEmpty(token)){
+            return null;
+        }
+        MiaoShaUser miaoShaUser = redisService.get(MiaoShaUserKey.token, token, MiaoShaUser.class);
+        if (miaoShaUser != null){
+            addCookie(response, miaoShaUser);
+        }
+        return miaoShaUser;
+    }
+
+    private void addCookie(HttpServletResponse response, MiaoShaUser miaoShaUser){
         String token = UUIDUtils.uuid();
         redisService.set(MiaoShaUserKey.token, token, miaoShaUser);
         Cookie cookie = new Cookie(COOKIE_NAME_TOKEN, token);
         cookie.setMaxAge(MiaoShaUserKey.token.empireSecond());
         cookie.setPath("/");
         response.addCookie(cookie);
-        return true;
-    }
-
-    public MiaoShaUser getByToken(String token) {
-        if (StringUtils.isEmpty(token)){
-            return null;
-        }
-        return redisService.get(MiaoShaUserKey.token, token, MiaoShaUser.class);
     }
 }
