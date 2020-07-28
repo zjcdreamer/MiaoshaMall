@@ -44,7 +44,9 @@ public class MiaoShaUserService {
         String calPass = MD5Util.formPassToDBPass(formPass, salt);
         if(!dbpassword.equals(calPass))
             throw new GlobalException(CodeMsg.PASSWORD_ERROR);
-        addCookie(response, miaoShaUser);
+
+        String token = UUIDUtils.uuid();
+        addCookie(response, token, miaoShaUser);
         return true;
     }
 
@@ -53,14 +55,14 @@ public class MiaoShaUserService {
             return null;
         }
         MiaoShaUser miaoShaUser = redisService.get(MiaoShaUserKey.token, token, MiaoShaUser.class);
+        //当根据token获取用户的时候，如果用户不为空则应该延长token的有效时间
         if (miaoShaUser != null){
-            addCookie(response, miaoShaUser);
+            addCookie(response, token, miaoShaUser);
         }
         return miaoShaUser;
     }
 
-    private void addCookie(HttpServletResponse response, MiaoShaUser miaoShaUser){
-        String token = UUIDUtils.uuid();
+    private void addCookie(HttpServletResponse response, String token, MiaoShaUser miaoShaUser){
         redisService.set(MiaoShaUserKey.token, token, miaoShaUser);
         Cookie cookie = new Cookie(COOKIE_NAME_TOKEN, token);
         cookie.setMaxAge(MiaoShaUserKey.token.empireSecond());
