@@ -70,6 +70,8 @@ public class GoodsController {
             miaoshaStatus = 1;
             remainSeconds = 0;
         }
+        model.addAttribute("miaoshaStatus", miaoshaStatus);
+        model.addAttribute("remainSeconds", remainSeconds);
         return "goods_detail";
     }
 }
