@@ -20,4 +20,8 @@ public class GoodsService {
     public GoodsVo getGoodsByGoodsId(Long goodsId) {
         return goodsDAO.getGoodsByGoodsId(goodsId);
     }
+
+    public void reduceStock(GoodsVo goods) {
+        goodsDAO.reduceStock(goods.getId());
+    }
 }

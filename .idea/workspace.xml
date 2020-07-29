@@ -2,7 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b780bd19-5a05-4021-9755-bd42b54784d6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/GoodsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/GoodsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/MiaoShaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/OrderDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/miaosha_fail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/order_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/GoodsDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/GoodsDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/GoodsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/GoodsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/dao/GoodsDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/dao/GoodsDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/result/CodeMsg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/service/GoodsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/imooc/miaosha/service/GoodsService.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -16,7 +28,7 @@
     <session id="-1332813492">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="16" />
+          <entry key="project.closed" value="18" />
           <entry key="project.open.time.22" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.36" value="1" />
@@ -25,20 +37,22 @@
           <entry key="project.open.time.41" value="1" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.5" value="3" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.6" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="Annotation" value="1" />
-          <entry key="class" value="28" />
-          <entry key="html" value="22" />
-          <entry key="java" value="167" />
+          <entry key="class" value="29" />
+          <entry key="html" value="26" />
+          <entry key="java" value="212" />
           <entry key="js" value="8" />
           <entry key="properties" value="10" />
           <entry key="xml" value="7" />
@@ -46,9 +60,9 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="28" />
-          <entry key="HTML" value="22" />
-          <entry key="JAVA" value="167" />
+          <entry key="CLASS" value="29" />
+          <entry key="HTML" value="26" />
+          <entry key="JAVA" value="212" />
           <entry key="JavaScript" value="8" />
           <entry key="Properties" value="10" />
           <entry key="UML" value="1" />
@@ -59,7 +73,7 @@
         <counts>
           <entry key="dummy" value="10" />
           <entry key="html" value="51" />
-          <entry key="java" value="6966" />
+          <entry key="java" value="7870" />
           <entry key="properties" value="313" />
           <entry key="xml" value="13" />
         </counts>
@@ -67,7 +81,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="51" />
-          <entry key="JAVA" value="6966" />
+          <entry key="JAVA" value="7870" />
           <entry key="PLAIN_TEXT" value="10" />
           <entry key="Properties" value="313" />
           <entry key="XML" value="13" />
@@ -77,7 +91,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/MiaoshaApplication.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
@@ -90,14 +104,47 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/GoodsDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="185">
+              <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/OrderDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/MiaoShaUserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -107,6 +154,7 @@
       <find>秒杀开始时间</find>
       <find>立即秒杀</find>
       <find>remainSeconds</find>
+      <find>userId</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,7 +190,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobileValidator.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/validator/isMobile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/exception/ExpectionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/exception/GlobalException.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/exception/GlobalExceptionHandler.java" />
@@ -159,9 +206,14 @@
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/OrderInfo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaOrder.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/GoodsVo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/GoodsDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/GoodsController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/OrderService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/OrderDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/MiaoShaController.java" />
       </list>
     </option>
   </component>
@@ -197,6 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -398,7 +451,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -409,24 +461,25 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595923711972" />
-    <property name="last_opened_file_path" value="D:/BaiduNetdiskDownload/100、Java秒杀系统方案优化 高性能高并发实战/project/y2gwfn/miaosha_3" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1595992740314" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.imooc.miaosha.controller" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.imooc.miaosha.service" />
+      <recent name="com.imooc.miaosha.controller" />
+      <recent name="com.imooc.miaosha.redis" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\github下载的项目\练手项目\miaosha\src\main\resources\templates" />
       <recent name="D:\github下载的项目\练手项目\miaosha\src\main\resources\static" />
       <recent name="D:\github下载的项目\练手项目\miaosha\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.imooc.miaosha.controller" />
-      <recent name="com.imooc.miaosha.redis" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.imooc.miaosha.controller" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -513,18 +566,20 @@
       <workItem from="1595767254923" duration="6593000" />
       <workItem from="1595817269545" duration="5729000" />
       <workItem from="1595833685748" duration="2447000" />
-      <workItem from="1595917523571" duration="6176000" />
+      <workItem from="1595917523571" duration="7255000" />
+      <workItem from="1595936897536" duration="6248000" />
+      <workItem from="1595992398231" duration="283000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83926000" />
+    <option name="totallyTimeSpent" value="91536000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20291026" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20937753" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -534,7 +589,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32924694" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34325746" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32924694" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.45709282" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -568,50 +623,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/common.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/static/js/md5.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/JavaSE基础/练习代码/Javacorelearn/java/util/regex/Matcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="602" column="19" selection-start-line="602" selection-start-column="19" selection-end-line="602" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/JavaSE基础/练习代码/Javacorelearn/java/util/regex/Pattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="1085" column="19" selection-start-line="1085" selection-start-column="19" selection-end-line="1085" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/MiaoShaUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -656,13 +667,6 @@
           <Categories />
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/ValidatorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -764,13 +768,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="29" column="47" lean-forward="true" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/exception/GlobalException.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="258">
@@ -841,117 +838,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaUserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaGoods.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding>
-            <element signature="e#270#271#0" expanded="true" />
-            <element signature="e#304#305#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#394#395#0" expanded="true" />
-            <element signature="e#438#439#0" expanded="true" />
-            <element signature="e#476#477#0" expanded="true" />
-            <element signature="e#514#515#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
-            <element signature="e#600#601#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#678#679#0" expanded="true" />
-            <element signature="e#710#711#0" expanded="true" />
-            <element signature="e#758#759#0" expanded="true" />
-            <element signature="e#800#801#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#906#907#0" expanded="true" />
-            <element signature="e#944#945#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/OrderInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
-          <folding>
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#512#513#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#650#651#0" expanded="true" />
-            <element signature="e#682#683#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#794#795#0" expanded="true" />
-            <element signature="e#833#834#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#928#929#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1016#1017#0" expanded="true" />
-            <element signature="e#1048#1049#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1140#1141#0" expanded="true" />
-            <element signature="e#1178#1179#0" expanded="true" />
-            <element signature="e#1211#1212#0" expanded="true" />
-            <element signature="e#1264#1265#0" expanded="true" />
-            <element signature="e#1308#1309#0" expanded="true" />
-            <element signature="e#1345#1346#0" expanded="true" />
-            <element signature="e#1378#1379#0" expanded="true" />
-            <element signature="e#1430#1431#0" expanded="true" />
-            <element signature="e#1474#1475#0" expanded="true" />
-            <element signature="e#1514#1515#0" expanded="true" />
-            <element signature="e#1549#1550#0" expanded="true" />
-            <element signature="e#1606#1607#0" expanded="true" />
-            <element signature="e#1654#1655#0" expanded="true" />
-            <element signature="e#1688#1689#0" expanded="true" />
-            <element signature="e#1717#1718#0" expanded="true" />
-            <element signature="e#1762#1763#0" expanded="true" />
-            <element signature="e#1798#1799#0" expanded="true" />
-            <element signature="e#1833#1834#0" expanded="true" />
-            <element signature="e#1866#1867#0" expanded="true" />
-            <element signature="e#1916#1917#0" expanded="true" />
-            <element signature="e#1960#1961#0" expanded="true" />
-            <element signature="e#1992#1993#0" expanded="true" />
-            <element signature="e#2022#2023#0" expanded="true" />
-            <element signature="e#2066#2067#0" expanded="true" />
-            <element signature="e#2104#2105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-          <folding>
-            <element signature="e#212#213#0" expanded="true" />
-            <element signature="e#246#247#0" expanded="true" />
-            <element signature="e#274#275#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-            <element signature="e#334#335#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#412#413#0" expanded="true" />
-            <element signature="e#444#445#0" expanded="true" />
-            <element signature="e#474#475#0" expanded="true" />
-            <element signature="e#518#519#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
-            <element signature="e#618#619#0" expanded="true" />
-            <element signature="e#662#663#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -959,25 +845,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/GoodsDAO.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/util/ValidatorUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="14" column="146" selection-start-line="14" selection-start-column="146" selection-end-line="14" selection-end-column="146" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="299">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/GoodsService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaUserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="51" lean-forward="true" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#461#462#0" expanded="true" />
-            <element signature="e#519#520#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1081">
+          <caret line="69" column="35" lean-forward="true" selection-start-line="69" selection-start-column="35" selection-end-line="69" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/OrderInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="223">
+          <caret line="47" column="76" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -985,76 +877,105 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="31" lean-forward="true" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
-          <folding>
-            <element signature="e#287#288#0" expanded="true" />
-            <element signature="e#312#313#0" expanded="true" />
-            <element signature="e#346#347#0" expanded="true" />
-            <element signature="e#374#375#0" expanded="true" />
-            <element signature="e#410#411#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#571#572#0" expanded="true" />
-            <element signature="e#604#605#0" expanded="true" />
-            <element signature="e#656#657#0" expanded="true" />
-            <element signature="e#700#701#0" expanded="true" />
-            <element signature="e#735#736#0" expanded="true" />
-            <element signature="e#766#767#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#854#855#0" expanded="true" />
-            <element signature="e#892#893#0" expanded="true" />
-            <element signature="e#926#927#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1026#1027#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1096#1097#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1192#1193#0" expanded="true" />
-            <element signature="e#1230#1231#0" expanded="true" />
-            <element signature="e#1263#1264#0" expanded="true" />
-            <element signature="e#1316#1317#0" expanded="true" />
-            <element signature="e#1360#1361#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/vo/GoodsVo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#288#289#0" expanded="true" />
-            <element signature="e#323#324#0" expanded="true" />
-            <element signature="e#379#380#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#551#552#0" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#629#630#0" expanded="true" />
-            <element signature="e#661#662#0" expanded="true" />
-            <element signature="e#709#710#0" expanded="true" />
-            <element signature="e#751#752#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#813#814#0" expanded="true" />
-            <element signature="e#857#858#0" expanded="true" />
-            <element signature="e#895#896#0" expanded="true" />
-          </folding>
+          <caret line="20" column="19" selection-start-line="20" selection-start-column="19" selection-end-line="20" selection-end-column="19" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_detail.html">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaGoods.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="41" column="71" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
+        <state relative-caret-position="253">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/domain/MiaoShaOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="6" column="25" lean-forward="true" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/MiaoShaService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.3.2/mybatis-spring-1.3.2.jar!/org/mybatis/spring/MyBatisExceptionTranslator.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/GoodsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#461#462#0" expanded="true" />
+            <element signature="e#519#520#0" expanded="true" />
+            <element signature="e#565#566#0" expanded="true" />
+            <element signature="e#585#586#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/GoodsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="291">
-          <caret line="73" column="57" selection-start-line="73" selection-start-column="44" selection-end-line="73" selection-end-column="57" />
+        <state relative-caret-position="154">
+          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/result/CodeMsg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/service/OrderService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/miaosha_fail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/order_detail.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/controller/MiaoShaController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/MiaoShaUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/OrderDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1065,6 +986,16 @@
           <folding>
             <element signature="e#336#337#0" expanded="true" />
             <element signature="e#405#406#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/imooc/miaosha/dao/GoodsDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="19" column="21" lean-forward="true" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
