@@ -45,6 +45,9 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver {
 
     private String getCookie(HttpServletRequest request, String cookieNameToken) {
         Cookie[] cookies = request.getCookies();
+        if (cookies == null){
+            return null;
+        }
         for (Cookie cookie : cookies) {
             if (cookie.getName().equals(MiaoShaUserService.COOKIE_NAME_TOKEN)) {
                 return cookie.getValue();

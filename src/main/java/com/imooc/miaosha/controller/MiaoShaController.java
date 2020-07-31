@@ -35,6 +35,8 @@ public class MiaoShaController {
     @Autowired
     OrderService orderService;
 
+
+    //QPS:69
     @RequestMapping("/do_miaosha")
     public String doMiaoSha(Model model, MiaoShaUser user, @RequestParam("goodsId") long goodsId){
         //判断用户是否为空
