@@ -1,4 +1,6 @@
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\service\OrderService.java
+D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\util\DBUtil.java
+D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\util\UserUtil.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\MiaoshaApplication.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\dao\OrderDAO.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\domain\MiaoShaGoods.java
@@ -12,6 +14,7 @@ D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\controller\
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\exception\GlobalException.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\vo\GoodsVo.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\domain\Goods.java
+D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\redis\GoodsKey.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\redis\RedisPoolFactory.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\service\UserService.java
 D:\github下载的项目\练手项目\miaosha\src\main\java\com\imooc\miaosha\domain\MiaoShaOrder.java

@@ -51,6 +51,34 @@ public class MiaoShaUserService {
         return token;
     }
 
+    public MiaoShaUser getById(long id) {
+        MiaoShaUser miaoShaUser = redisService.get(MiaoShaUserKey.id, ""+id, MiaoShaUser.class);
+        if (miaoShaUser != null){
+            return miaoShaUser;
+        }
+
+        miaoShaUser = miaoShaUserDAO.getUserById(id);
+        if (miaoShaUser == null)
+            throw new GlobalException(CodeMsg.MOBILE_NOT_EXIST);
+        redisService.set(MiaoShaUserKey.id, ""+id, miaoShaUser);
+        return miaoShaUser;
+    }
+
+    public boolean updatePass(String token, long id, String newPass){
+        MiaoShaUser user = getById(id);
+        if (user == null)
+            return false;
+        MiaoShaUser miaoShaUser = new MiaoShaUser();
+        miaoShaUser.setId(id);
+        miaoShaUser.setPassword(MD5Util.formPassToDBPass(newPass, user.getSalt()));
+        user.setPassword(miaoShaUser.getPassword());
+        miaoShaUserDAO.update(miaoShaUser);
+        //更新redis的信息
+        redisService.delete(MiaoShaUserKey.id, ""+id);
+        redisService.set(MiaoShaUserKey.token, token, user);
+        return true;
+    }
+
     public MiaoShaUser getByToken(HttpServletResponse response, String token) {
         if (StringUtils.isEmpty(token)){
             return null;

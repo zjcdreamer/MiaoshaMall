@@ -1,10 +1,12 @@
 com\imooc\miaosha\util\ValidatorUtil.class
+com\imooc\miaosha\redis\GoodsKey.class
 com\imooc\miaosha\service\MiaoShaService.class
 com\imooc\miaosha\dao\OrderDAO.class
 com\imooc\miaosha\domain\OrderInfo.class
 com\imooc\miaosha\MiaoshaApplication.class
 com\imooc\miaosha\service\GoodsService.class
 META-INF\spring-configuration-metadata.json
+com\imooc\miaosha\util\DBUtil.class
 com\imooc\miaosha\config\WebConfig.class
 com\imooc\miaosha\exception\GlobalExceptionHandler.class
 com\imooc\miaosha\redis\RedisConfig.class
@@ -16,6 +18,7 @@ com\imooc\miaosha\domain\User.class
 com\imooc\miaosha\controller\UserController.class
 com\imooc\miaosha\redis\MiaoShaUserKey.class
 com\imooc\miaosha\util\MD5Util.class
+com\imooc\miaosha\util\UserUtil.class
 com\imooc\miaosha\config\UserArgumentResolver.class
 com\imooc\miaosha\domain\Goods.class
 com\imooc\miaosha\redis\RedisService.class
