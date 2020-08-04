@@ -1,6 +1,7 @@
 package com.imooc.miaosha.controller;
 
 import com.imooc.miaosha.domain.User;
+import com.imooc.miaosha.rabbitmq.MQSender;
 import com.imooc.miaosha.redis.RedisService;
 import com.imooc.miaosha.redis.UserKey;
 import com.imooc.miaosha.result.Result;
@@ -21,6 +22,9 @@ public class Samplecontroller {
     @Autowired
     RedisService redisService;
 
+    @Autowired
+    MQSender mqSender;
+
     @RequestMapping("/thymeleaf")
     public String thymeleaf(Model model){
         model.addAttribute("name", "Jack");
@@ -34,6 +38,13 @@ public class Samplecontroller {
     public Result<User> get(){
         User user = userService.getById(1);
         return Result.success(user);
+    }
+
+    @ResponseBody
+    @RequestMapping("/mq")
+    public Result<String> mq(){
+        mqSender.send("hello,mq");
+        return Result.success("ok");
     }
 
     //这部分是检测事务，注意看Service层的@Transtractioanl
