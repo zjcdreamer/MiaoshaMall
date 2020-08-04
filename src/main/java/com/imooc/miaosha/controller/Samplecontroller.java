@@ -47,6 +47,27 @@ public class Samplecontroller {
         return Result.success("ok");
     }
 
+    @ResponseBody
+    @RequestMapping("/mq/topic")
+    public Result<String> mqTopic(){
+        mqSender.topicSend("hello,mq");
+        return Result.success("ok");
+    }
+
+    @ResponseBody
+    @RequestMapping("/mq/fanout")
+    public Result<String> mqFanout(){
+        mqSender.fanoutSend("hello,mq");
+        return Result.success("ok");
+    }
+
+    @ResponseBody
+    @RequestMapping("/mq/headers")
+    public Result<String> mqHeaders(){
+        mqSender.headerSend("hello,mq");
+        return Result.success("ok");
+    }
+
     //这部分是检测事务，注意看Service层的@Transtractioanl
     @ResponseBody
     @RequestMapping("/db/tx")
