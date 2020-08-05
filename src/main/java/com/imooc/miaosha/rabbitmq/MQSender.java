@@ -1,5 +1,6 @@
 package com.imooc.miaosha.rabbitmq;
 
+import com.imooc.miaosha.domain.MiaoShaMessage;
 import com.imooc.miaosha.redis.RedisService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +17,12 @@ public class MQSender {
 
     @Autowired
     AmqpTemplate amqpTemplate;
+
+    public void miaoShaSend(MiaoShaMessage mm){
+        String msg = RedisService.beanToString(mm);
+        log.info("send message:"+msg);
+        amqpTemplate.convertAndSend(MQConfig.MIAOSHA_QUEUE, msg);
+    }
 
     public void send(Object mm){
         String msg = RedisService.beanToString(mm);

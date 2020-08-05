@@ -20,7 +20,10 @@ public class MiaoShaService {
     @Transactional
     public OrderInfo miaosha(MiaoShaUser user, GoodsVo goods) {
         //减库存、下订单、下秒杀订单
-        goodsService.reduceStock(goods);
-        return orderService.createOrder(user, goods);
+        boolean success = goodsService.reduceStock(goods);
+        if (success){
+            return orderService.createOrder(user, goods);
+        }
+        return null;
     }
 }
