@@ -8,6 +8,7 @@ import com.imooc.miaosha.result.Result;
 import com.imooc.miaosha.service.GoodsService;
 import com.imooc.miaosha.service.MiaoShaUserService;
 import com.imooc.miaosha.service.UserService;
+import com.imooc.miaosha.vo.GoodsDetailVo;
 import com.imooc.miaosha.vo.GoodsVo;
 import com.imooc.miaosha.vo.LoginVo;
 import org.slf4j.Logger;
@@ -64,6 +65,9 @@ public class GoodsController {
         return html;
     }
 
+    /**
+     * 将详情页面缓存到Redis中或者手段渲染形成详情页
+     */
     @RequestMapping(value = "/to_detail/{goodsId}", produces = "text/html")
     @ResponseBody
     public String toDetail(HttpServletRequest request, HttpServletResponse response,Model model, MiaoShaUser user,
@@ -102,5 +106,37 @@ public class GoodsController {
         if (!StringUtils.isEmpty(html))
             redisService.set(GoodsKey.getGoodsDetail, ""+goodsId, html);
         return html;
+    }
+
+    /**
+     * 这其实是静态化之后，不需要从redis中取页面，也不需要向服务器请求页面，
+     * 页面直接就有了，只需要填入数据即可
+     */
+    @RequestMapping(value="/detail/{goodsId}")
+    @ResponseBody
+    public Result<GoodsDetailVo> detail(HttpServletRequest request, HttpServletResponse response, Model model,MiaoShaUser user,
+                                        @PathVariable("goodsId")long goodsId) {
+        GoodsVo goods = goodsService.getGoodsByGoodsId(goodsId);
+        long startAt = goods.getStartDate().getTime();
+        long endAt = goods.getEndDate().getTime();
+        long now = System.currentTimeMillis();
+        int miaoshaStatus = 0;
+        int remainSeconds = 0;
+        if(now < startAt ) {//秒杀还没开始，倒计时
+            miaoshaStatus = 0;
+            remainSeconds = (int)((startAt - now )/1000);
+        }else  if(now > endAt){//秒杀已经结束
+            miaoshaStatus = 2;
+            remainSeconds = -1;
+        }else {//秒杀进行中
+            miaoshaStatus = 1;
+            remainSeconds = 0;
+        }
+        GoodsDetailVo vo = new GoodsDetailVo();
+        vo.setGoods(goods);
+        vo.setUser(user);
+        vo.setRemainSeconds(remainSeconds);
+        vo.setMiaoshaStatus(miaoshaStatus);
+        return Result.success(vo);
     }
 }

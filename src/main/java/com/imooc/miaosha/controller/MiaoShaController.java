@@ -10,14 +10,14 @@ import com.imooc.miaosha.redis.RedisService;
 import com.imooc.miaosha.result.CodeMsg;
 import com.imooc.miaosha.result.Result;
 import com.imooc.miaosha.service.*;
+import com.imooc.miaosha.util.MD5Util;
+import com.imooc.miaosha.util.UUIDUtils;
 import com.imooc.miaosha.vo.GoodsVo;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -65,13 +65,20 @@ public class MiaoShaController implements InitializingBean {
         }
     }
 
-    @RequestMapping("/do_miaosha")
-    public Result<Integer> doMiaoSha(Model model, MiaoShaUser user, @RequestParam("goodsId") long goodsId){
+    @RequestMapping(value = "/{path}/do_miaosha", method = RequestMethod.POST)
+    @ResponseBody
+    public Result<Integer> doMiaoSha(Model model, MiaoShaUser user,
+                                     @RequestParam("goodsId") long goodsId,
+                                     @PathVariable("path") String path){
         //判断用户是否为空
         if(user == null){
             return Result.error(CodeMsg.MOBILE_EMPTY);
         }
         model.addAttribute("user",user);
+        //判断path
+        boolean check = miaoShaService.checkPath(user, goodsId, path);
+        if (!check)
+            return Result.error(CodeMsg.REQUEST_ILLIAGEL);
         //预减库存，判断该秒杀商品是否还有库存
         boolean over = (boolean)overMap.get(goodsId);
         if (over){
@@ -132,4 +139,27 @@ public class MiaoShaController implements InitializingBean {
         return "order_detail";
     }
     */
+
+    @RequestMapping(value = "/path", method = RequestMethod.GET)
+    @ResponseBody
+    public Result<String> getMiaoshaPath(MiaoShaUser user, @RequestParam("goodsId") long goodsId){
+        if (user == null)
+            return Result.error(CodeMsg.MOBILE_NOT_EXIST);
+        String path = miaoShaService.createMiaoshaPaht(user, goodsId);
+        return Result.success(path);
+    }
+
+    /**
+     *  orderId：成功
+     *  -1：秒杀失败
+     *  0： 排队中
+     */
+    @RequestMapping(value = "/result", method = RequestMethod.GET)
+    @ResponseBody
+    public Result<Long> getMiaoshaResult(MiaoShaUser user, @RequestParam("goodsId") long goodsId){
+        if (user == null)
+            return Result.error(CodeMsg.MOBILE_NOT_EXIST);
+        long result = miaoShaService.getMiaoshaResult(user, goodsId);
+        return Result.success(result);
+    }
 }
