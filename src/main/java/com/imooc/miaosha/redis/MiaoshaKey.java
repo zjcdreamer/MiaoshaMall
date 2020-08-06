@@ -14,4 +14,5 @@ public class MiaoshaKey extends BasePrefix {
     }
 
     public static MiaoshaKey getMiaoshaPaht = new MiaoshaKey(300, "mp");
+    public static MiaoshaKey getMiaoshaVerifyCode = new MiaoshaKey(300, "mvc");
 }
